@@ -73,7 +73,7 @@ Assignment_2/
 │       └── config.ts                  # Base URL & timeout settings
 ├── tests/
 │   └── parabank-banking.spec.ts       # Comprehensive end-to-end spec (Steps 1-7)
-├── playwright.config.ts               # Test runner configuration (Chromium, HTML reporter, traces)
+├── playwright.config.ts               # Test runner configuration (Chromium, slowMo 1000ms, HTML reporter, traces)
 ├── tsconfig.json                      # TypeScript configuration
 ├── package.json                       # Project scripts and dependencies
 └── README.md                          # Documentation and instructions
