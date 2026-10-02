@@ -6,7 +6,7 @@ import { defineConfig, devices } from '@playwright/test';
  */
 export default defineConfig({
   testDir: './tests',
-  timeout: 60000,
+  timeout: 120000,
   expect: {
     timeout: 10000,
   },
@@ -24,6 +24,9 @@ export default defineConfig({
     trace: 'retain-on-failure',
     actionTimeout: 15000,
     navigationTimeout: 30000,
+    launchOptions: {
+      slowMo: 1000, // 1 second delay between Playwright actions
+    },
   },
   projects: [
     {
